@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -29,14 +29,20 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'contactCtrl',
+        controllerAs: 'contact'
+      })
       .otherwise({
         redirectTo: '/'
       });
 	  
+	   /*
     // enable html5Mode for pushstate ('#'-less URLs)
     $locationProvider.html5Mode({
 	  enabled: true,
 	  requireBase: false
 	});
-    $locationProvider.hashPrefix('!');
+    $locationProvider.hashPrefix('!');*/
   });

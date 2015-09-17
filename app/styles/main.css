@@ -81,3 +81,106 @@ body {
     border-bottom: 0;
   }
 }
+
+
+div.contact-form{ margin-bottom:50px; }
+div.contact-form .half-side:first-child {
+    width: 40%;
+    padding: 0;
+}
+div.contact-form .half-side {
+    width: 60%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+    padding-left: 2%;
+}
+div.contact-form .field {
+width: 100%;
+background: #FFF;
+border: 1px #DDD solid;
+padding: 14px;
+margin-bottom: 16px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+height: 48px;
+padding-bottom: 0;
+}
+div.contact-form .field input,div.contact-form .field textarea{ width:100%; padding:0; margin:0; border:none; }
+
+div.contact-form .field.textarea {
+    height: 176px;
+    max-height: 176px;
+} 
+div.contact-form .field textarea {
+    height: 145px;
+}
+div.contact-form [type='submit'] {
+    background: #1aa1e1;
+    border: none;
+    -webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+    float: right;
+    text-transform: uppercase;
+    font-family: 'kalinga';
+    padding: 12px;
+    width: 120px;
+    padding-bottom: 5px;
+}
+
+div.contact_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9;
+    width: 100%;
+}
+div.contact_map {
+    position: relative;
+}
+div.contact_map img {
+    display: block;
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+}
+.quiz-mode span{
+top: 14px;
+right: 14px;
+}
+
+.quiz-mode span{  
+background: #FFF;
+/* border: 1px #DDD solid; */
+padding: 14px;
+margin-bottom: 16px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+height: 48px;
+padding-bottom: 0; 
+text-align: right; }
+
+.quiz-mode input{  
+background: #FFF;
+width:100%;
+border: 1px #DDD solid;
+padding: 0 14px;
+margin-bottom: 16px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+height: 48px;
+padding-bottom: 0; 
+}
+input[type='submit']:disabled{
+	background-color: lightgrey;
+}

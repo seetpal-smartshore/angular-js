@@ -14,4 +14,10 @@ angular.module('step1App')
       'AngularJS',
       'Karma'
     ];
+	this.ourLinks	=	[];
+	/*
+	$scope.$on('categoryAdded', function (event, args) {
+		this.ourLinks.push(args.new_data);
+	});
+*/
   });
