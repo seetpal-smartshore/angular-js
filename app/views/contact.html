@@ -1,0 +1,44 @@
+    <p>This is the about view.</p>
+	
+	<form novalidate name='cont'>
+    <div class="contact-form">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="field">
+            <span class="wpcf7-form-control-wrap text-931">
+              <input type="text" ng-model="contactme.name" placeholder="Name" required />
+            </span>
+          </div>
+          <div class="field">
+            <span class="wpcf7-form-control-wrap email-195">
+              <input type="email" ng-model="contactme.email" placeholder="Email" />
+            </span>
+          </div>
+          <div class="field">
+            <span class="wpcf7-form-control-wrap tel-412">
+              <input type="tel" ng-model="contactme.tel" placeholder="Phone no." />
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="field textarea">
+            <span class="wpcf7-form-control-wrap textarea-954">
+              <textarea ng-model="contactme.textarea" cols="40" rows="10" placeholder="Message"></textarea>
+            </span>
+          </div>
+        </div>
+      </div>
+	  
+      <div class="row quiz-mode">
+        <div class="wpcf7-form-control-wrap spam-quiz">
+			<div class="wpcf7-quiz-label col-md-6">What is bigger, 7 or 9?</div>
+			<div hidden class='col-md-6'><input type="text" size="2" maxlength="2" /></div>
+		</div>
+      </div>
+	  <pre>{{contactme | json}}</pre>
+      <div class='row'>
+        <input type="submit" ng-click='contact.addTeamMember(contactme)' ng-disabled='!cont.$valid' value="Submit"/>
+      </div>
+	  <br/>
+    </div>
+	</form>
