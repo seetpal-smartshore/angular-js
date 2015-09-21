@@ -8,28 +8,19 @@
  * Controller of the step1App
  */
 angular.module('step1App')
-  .controller('contactCtrl', function ($scope) {
-    this.form = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('contactCtrl', ['$scope', function ($scope) {
+  
+	this.addTeamMember = function(contactme){
 	
+		//var contactme	=	angular.toJson(contactme);
 	
-   
-	
-	this.addTeamMember = function(teamMember){
-	
-		console.log(teamMember);
-		
-//		var newdata = angular.copy(teamMember);
-		
-		//$rootScope.$broadcast('pshit', { 'new_data': newdata });
-		
-//		$scope.about.ourLinks.push(newdata);
-		//$scope.contactme	=	[];
-		
+//		bar newdata = angular.copy(teamMember);
+//		console.log(data);
+//		$scope.$parent.ourLinks.push(data);
+//		this.ourLinks.push(data);
+
+		$scope.$parent.ourLinks.push(contactme);
+		$scope.contactme	=	{};
 	};
-	
-	
-  });
+
+  }]);

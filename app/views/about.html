@@ -1,7 +1,18 @@
 <p>This is the about view.</p>
 
+
 <ul>
-	<li ng-repeat='modules in about.awesomeThings'>{{modules}}</li>
+	<li ng-repeat='contacts in ourLinks'>
+		<dl>
+			<dt>{{contacts.name}}</dt>
+			<dd>{{contacts.email + ', '+ contacts.tel + ', ' + contacts.textarea}}</dd>
+		</dl>
+	</li>
+	
+</ul>
+
+<ul>
+	<li ng-repeat='modules in awesomeThings'>{{modules}}</li>
 	
 </ul>
 

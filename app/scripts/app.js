@@ -17,6 +17,9 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .controller('appCtrl',['$scope', function($scope){
+		$scope.ourLinks	=	[];
+	}])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -44,5 +47,6 @@ angular
 	  enabled: true,
 	  requireBase: false
 	});
-    $locationProvider.hashPrefix('!');*/
+    $locationProvider.hashPrefix('!');
+	*/
   });
